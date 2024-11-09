@@ -1,0 +1,32 @@
+/* Đảm bảo rằng màu chữ trong select là trắng khi chế độ tối (Dark Mode) */
+select, .variant-option {
+    color: black; /* Mặc định màu đen cho văn bản */
+}
+
+/* Khi trong chế độ Dark Mode, đổi màu chữ thành trắng */
+body.dark-mode select, body.dark-mode .variant-option {
+    color: white;
+}
+.display-ruby{
+    display: ruby;
+}
+#uploadOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#userImage:hover + #uploadOverlay {
+    opacity: 1;
+}
+    

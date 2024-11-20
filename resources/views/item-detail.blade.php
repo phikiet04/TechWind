@@ -74,9 +74,10 @@
                     </div>
                     <div class="mt-4">
                         <h5 class="text-lg font-semibold">Mô tả :</h5>
-                        <p class="text-slate-400 mt-2">{{ $product->description }}</p>
+                   
 
-                        <ul class="list-none text-slate-400 mt-4">
+                        <ul class="list-none text-slate-400 mt-4 bg-white p-5 rounded-xl">
+                        <p class="text-slate-400 mt-2">{{ $product->description }}</p>
                             <li class="mb-1 flex">
                                 <i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i>
                                 Giải pháp Marketing số hiện đại, giúp bạn phát triển bền vững
@@ -109,6 +110,7 @@
                                             </option>
                                         @endforeach
                                     </select>
+
                                 </div>
                             </div>
                         </div>
@@ -124,7 +126,7 @@
                             <div class="mt-4">
                                 <button type="submit" data-product-id="{{ $product->id }}"
                                     class="add-to-cart py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white mt-2">
-                                    Add to Cart
+                                    Thêm vào giỏ hàng
                                 </button>
                             </div>
                         </form>
@@ -138,6 +140,38 @@
         </div>
 
         <!--end grid-->
+        <div class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg  mt-10">
+    <div class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <svg class="h-6 w-6 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 1a6 6 0 11-6 6 6 6 0 016-6zm1 9H9v-1h2v1zm0-2H9V9h2v1zm0-2H9V7h2v1z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Miễn phí vận chuyển toàn quốc</span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <svg class="h-6 w-6 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 1a6 6 0 11-6 6 6 6 0 016-6zm1 9H9v-1h2v1zm0-2H9V9h2v1zm0-2H9V7h2v1z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Bảo hành 12 tháng chính hãng</span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <svg class="h-6 w-6 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 1a6 6 0 11-6 6 6 6 0 016-6zm1 9H9v-1h2v1zm0-2H9V9h2v1zm0-2H9V7h2v1z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">1 đổi 1 trong 30 ngày đầu nếu có lỗi phần cứng do nhà sản xuất</span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <svg class="h-6 w-6 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 1a6 6 0 11-6 6 6 6 0 016-6zm1 9H9v-1h2v1zm0-2H9V9h2v1zm0-2H9V7h2v1z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Giá đã bao gồm VAT</span>
+        </div>
+    </div>
+</div>
+    
 
         <div class="grid md:grid-cols-12 grid-cols-1 mt-10 gap-[30px]">
             <div class="lg:col-span-3 md:col-span-5">
@@ -171,6 +205,7 @@
                     </ul>
                 </div>
             </div>
+            
 
             <div class="lg:col-span-9 md:col-span-7">
                 <div id="myTabContent" class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md">
@@ -325,9 +360,9 @@
     <section class="related-products mt-10">
         <div class="container">
             <h3 class="text-2xl font-semibold mb-6">Sản phẩm cùng danh mục</h3>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] p-3 bg-white">
             @foreach($relatedProducts as $product)
-                <div class="group transform lg:scale-105">
+                <div class="group transform lg:scale-105  border-2 rounded-xl p-2">
                     <div
                         class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
                         @if ($product->variants->isNotEmpty())
@@ -356,7 +391,7 @@
                                 @if(auth()->check())
                                     <button type="submit" data-product-id="{{ $product->id }}"
                                         class="add-to-cart mt-2 py-2 px-5 inline-block font-semibold tracking-wide border border-transparent duration-500 text-base text-center bg-slate-900 hover:bg-slate-700 text-white w-full rounded-md shadow-md hover:shadow-lg transition">
-                                        Add to Cart
+                                        Thêm Vào Giỏ Hàng
                                     </button>
                                 @endif
                             </form>
@@ -414,6 +449,11 @@
                                 </ul>
                             </div>
                         </div>
+                        <ul class="border-2 text-center rounded-xl">
+                            <li>
+                                <a href="">Xem thêm</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             @endforeach

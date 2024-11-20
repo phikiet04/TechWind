@@ -1,5 +1,6 @@
 <!-- Footer Start -->
-<footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">
+<div  class="p-10">
+ <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200 rounded-xl ">
     <div class="container relative">
         <div class="grid grid-cols-12">
             <div class="col-span-12">
@@ -219,26 +220,16 @@
             <!--end grid-->
         </div>
         <!--end container-->
-    </div>
+   </div>
 </footer>
+ </div>
+
+
 <!--end footer-->
 <!-- Footer End -->
 
 <!-- Start Cookie Popup -->
-<div
-    class="cookie-popup fixed max-w-lg bottom-3 end-3 start-3 sm:start-0 mx-auto bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md py-5 px-6 z-50">
-    <p class="text-slate-400">
-        This website uses cookies to provide you with a great user experience.
-        By using it, you accept our
-        <a href="https://shreethemes.in/" target="_blank"
-            class="text-emerald-600 dark:text-emerald-500 font-semibold">use of cookies</a>
-    </p>
-    <div class="cookie-popup-actions text-end">
-        <button class="absolute border-none bg-none p-0 cursor-pointer font-semibold top-2 end-2">
-            <i class="uil uil-times text-dark dark:text-slate-200 text-2xl"></i>
-        </button>
-    </div>
-</div>
+
 <!--Note: Cookies Js including in plugins.init.js (path like; assets/js/plugins.init.js) and Cookies css including in _helper.scss (path like; scss/_helper.scss)-->
 <!-- End Cookie Popup -->
 

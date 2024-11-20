@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
 <!-- Mirrored from shreethemes.in/techwind/landing/index-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Mar 2024 01:43:09 GMT -->
@@ -6,7 +7,7 @@
     <meta charset="UTF-8" />
     <title>@yield('title', 'TechWind')
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> 
     <meta name="description" content="Tailwind CSS Multipurpose Landing & Admin Dashboard Template" />
     <meta name="keywords"
         content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css" />
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}" />
 </head>
 
-<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900 bg-gray-100">
     <!-- Loader Start -->
     <!-- <div id="preloader">
         <div id="status">
@@ -40,9 +41,10 @@
         </div>
     </div> -->
     <!-- Loader End -->
+     
 
     <!-- Start Navbar -->
-    <nav id="topnav" class="defaultscroll is-sticky bg-white dark:bg-slate-900">
+    <nav id="topnav" class="defaultscroll is-sticky bg-gray-100 dark:bg-slate-900">
         <div class="container relative">
             <!-- Logo container-->
             <a class="logo" href="{{route('home')}}">
@@ -156,7 +158,7 @@
                     <li><a href="{{ route('home') }}" class="sub-menu-item">Trang chủ</a></li>
 
                     <li class="has-submenu parent-menu-item">
-                        <a href="javascript:void(0)">Danh mục</a><span class="menu-arrow"></span>
+                        <a href="javascript:void(0)   ">Danh mục</a><span class="menu-arrow"></span>
                         <ul class="submenu">
                             @foreach($categories as $category)
                                 <li>
@@ -175,7 +177,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="sub-menu-item">Contact</a>
+                        <a href="{{ route('contact')}}" class="sub-menu-item">Liên hệ</a>
                     </li>
                 </ul>
                 <!--end navigation menu-->

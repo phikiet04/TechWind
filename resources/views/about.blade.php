@@ -31,17 +31,9 @@
                 <h5 class="text-2xl font-semibold">Techwind Shop</h5>
 
                 <p class="text-slate-400 mt-4">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                    non numquam eius modi tempora incidunt ut labore et dolore magnam
-                    aliquam quaerat voluptatem.
+                Chào mừng bạn đến với TechWind - nơi cung cấp những sản phẩm công nghệ tiên tiến và chất lượng hàng đầu! Tại TechWind, chúng tôi luôn cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời với các sản phẩm điện tử, phụ kiện công nghệ, và thiết bị thông minh mới nhất, chính hãng, từ những thương hiệu uy tín.
+
+Tầm nhìn của chúng tôi là trở thành điểm đến hàng đầu cho những tín đồ yêu thích công nghệ. Với mục tiêu không ngừng đổi mới và phát triển, TechWind không chỉ cung cấp các sản phẩm chất lượng mà còn mang đến những dịch vụ tiện ích để hỗ trợ khách hàng một cách tốt nhất.
                 </p>
             </div>
         </div>
@@ -52,12 +44,16 @@
         <div class="grid grid-cols-1 pb-8 text-center">
             <h3
                 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                Features
+                Tại sao chọn TechWind?
             </h3>
 
             <p class="text-slate-400 max-w-xl mx-auto">
-                Start working with Tailwind CSS that can provide everything you need
-                to generate awareness, drive traffic, connect.
+           
+
+                Giá cả hợp lý: Chúng tôi luôn cung cấp các sản phẩm với mức giá cạnh tranh, đi kèm với các chương trình khuyến mãi hấp dẫn.
+                Đảm bảo chất lượng: Các sản phẩm tại TechWind được bảo hành chính hãng, đảm bảo bạn sẽ nhận được hỗ trợ khi có sự cố xảy ra.
+                Dễ dàng mua sắm trực tuyến: Với giao diện thân thiện và dễ sử dụng, bạn có thể dễ dàng tìm kiếm và đặt mua các sản phẩm yêu thích từ bất kỳ đâu.
+                Cảm ơn bạn đã lựa chọn TechWind! Chúng tôi hy vọng sẽ đồng hành cùng bạn trên hành trình khám phá những sản phẩm công nghệ tuyệt vời.
             </p>
         </div>
         <!--end grid-->
@@ -80,10 +76,9 @@
                 <div class="mt-6">
                     <a
                         href="#"
-                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Free Shipping</a>
+                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Miễn Phí Giao Hàng</a>
                     <p class="text-slate-400 duration-500 mt-3">
-                        If the distribution of letters and 'words' is random, the reader
-                        will not be distracted from making.
+                      Để mang lại sự thuận tiện tối đa cho khách hàng, TechWind cung cấp dịch vụ giao hàng miễn phí cho tất cả đơn hàng trên toàn quốc.
                     </p>
                 </div>
             </div>
@@ -105,9 +100,9 @@
                 <div class="mt-6">
                     <a
                         href="#"
-                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">24/7 Support</a>
+                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Hỗ Trợ 24/7 </a>
                     <p class="text-slate-400 duration-500 mt-3">
-                        If the distribution of letters and 'words' is random, the reader
+                    Cảm ơn bạn đã lựa chọn TechWind! Chúng tôi hy vọng sẽ đồng hành cùng bạn trên hành trình khám phá những sản phẩm công nghệ tuyệt vời và luôn sẵn sàng hỗ trợ bạn 24/7.ords' is random, the reader
                         will not be distracted from making.
                     </p>
                 </div>
@@ -130,10 +125,9 @@
                 <div class="mt-6">
                     <a
                         href="#"
-                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Payment Process</a>
+                        class="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">Quy trình thanh toán</a>
                     <p class="text-slate-400 duration-500 mt-3">
-                        If the distribution of letters and 'words' is random, the reader
-                        will not be distracted from making.
+                    Nếu bạn chọn phương thức thanh toán khi nhận hàng, người giao hàng sẽ thu tiền mặt khi giao sản phẩm tại địa chỉ mà bạn đã cung cấp.
                     </p>
                 </div>
             </div>
@@ -201,48 +195,7 @@
                     alt="" />
             </div>
 
-            <div class="lg:col-span-7 md:col-span-6">
-                <span
-                    class="bg-indigo-600/5 text-indigo-600 text-xs font-bold px-2.5 py-0.5 rounded h-5">Mobile Apps</span>
-                <h4
-                    class="md:text-3xl text-2xl lg:leading-normal leading-normal font-medium my-4">
-                    Available for your <br />
-                    Smartphones
-                </h4>
-                <p class="text-slate-400 max-w-xl mb-0">
-                    Search all the open positions on the web. Get your own
-                    personalized salary estimate. Read reviews on over 30000+
-                    companies worldwide.
-                </p>
-                <div class="my-5">
-                    <a href="#"><img
-                            src="assets/images/app/app.png"
-                            class="m-1 inline-block"
-                            alt="" /></a>
-
-                    <a href="#"><img
-                            src="assets/images/app/playstore.png"
-                            class="m-1 inline-block"
-                            alt="" /></a>
-                </div>
-
-                <div class="inline-block">
-                    <div
-                        class="pt-4 flex items-center border-t border-gray-100 dark:border-gray-700">
-                        <i
-                            data-feather="smartphone"
-                            class="me-2 text-indigo-600 size-10"></i>
-                        <div class="content">
-                            <h6 class="text-base font-medium">
-                                Install app now on your cellphones
-                            </h6>
-                            <a
-                                href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Learn More <i class="uil uil-angle-right-b"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!--end gird-->
     </div>

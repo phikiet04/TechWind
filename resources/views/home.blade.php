@@ -45,9 +45,7 @@
 <!-- Start -->
 <section class="relative py-10 p-6">
     <div class="container relative ">
-    <div class="relative w-full max-w-4xl mx-auto mt-10">
-        <!-- Slider Wrapper -->
-        <div id="grid" class="md:flex w-full justify-center mx-auto mt-4 bg-white rounded-xl p-5">
+    <div id="grid" class="md:flex w-full justify-center mx-auto mt-4 bg-white rounded-xl p-5">
             @if ($banners->count() == 1)
             <!-- Hiển thị 1 banner và 2 cái mặc định -->
             <div class="md:w-1/2 p-3 picture-item">
@@ -153,15 +151,6 @@
             </div>
             @endif
         </div>
-
-        <!-- Controls -->
-        <button onclick="moveSlider(-1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-lg">
-            &#10094;
-        </button>
-        <button onclick="moveSlider(1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-lg">
-            &#10095;
-        </button>
-    </div>
     </div>
     <div class="container relative mt-10">
         <div class="grid grid-cols-1 items-center">
@@ -201,7 +190,7 @@
                     <img src="{{ asset('storage/' . $product->variants[0]->image) }}" alt="{{ $product->name }}"
                         class=" max-h-300px object-cover" />
                     @else
-                   <img src="{{ asset('images/default-thumbnail.jpg') }}" alt="{{ $product->name }}"
+                    <img src="{{ asset('images/default-thumbnail.jpg') }} "
                         class=" max-h-300px object-cover" />
                     @endif
 
@@ -312,14 +301,14 @@
 
         <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] bg-white rounded-xl p-5   ">
             @foreach($ratingProducts as $product)
-            <div class="group transform lg:scale-105 border-2 p-1 border-blue-500 rounded-xl">
+            <div class="group transform lg:scale-105 ">
                 <div
                     class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
                     @if ($product->variants->isNotEmpty())
                     <img src="{{ asset('storage/' . $product->variants[0]->image) }}" alt="{{ $product->name }}"
                         class=" max-h-300px object-cover" />
                     @else
-                    <img src="{{ asset('images/default-thumbnail.jpg') }}" alt="{{ $product->name }}"
+                    <img src="{{ asset('images/default-thumbnail.jpg') }} "
                         class=" max-h-300px object-cover" />
                     @endif
 
@@ -469,7 +458,7 @@
 
     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] bg-white rounded-xl p-5">
         @foreach($recentProducts as $product)
-        <div class="group transform lg:scale-105 border-2 p-1 border-blue-500 rounded-xl">
+        <div class="group transform lg:scale-105">
             <div
                 class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
                 @if ($product->variants->isNotEmpty())

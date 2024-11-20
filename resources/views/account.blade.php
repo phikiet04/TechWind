@@ -7,7 +7,7 @@
 <section class="relative table w-full py-20 lg:py-24 bg-gray-50 dark:bg-slate-800">
     <div class="container relative">
         <div class="grid grid-cols-1 mt-14">
-            <h3 class="text-3xl leading-normal font-semibold">My Account</h3>
+            <h3 class="text-3xl leading-normal font-semibold">Tài khoản của tôi</h3>
         </div><!--end grid-->
 
         <div class="relative mt-3">
@@ -31,7 +31,7 @@
         <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px]">
             <div class="lg:col-span-3 md:col-span-5">
                 <div class="flex items-center">
-                    <img src="{{ asset('storage/' . ($user->userMeta && $user->userMeta->image ? $user->userMeta->image : 'default-image.jpg')) }}"
+                    <img src=""
                         alt="User Avatar" class="size-16 rounded-2xl shadow dark:shadow-gray-800" alt="User Image">
                     <div class="ms-2 display-ruby">
                         <p class="font-semibold text-slate-400">Hello,</p>

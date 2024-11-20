@@ -12,7 +12,7 @@
         <div class="relative mt-3">
             <ul class="tracking-[0.5px] mb-0 inline-block">
                 <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600">
-                    <a href="index-shop.html">Techwind</a>
+                    <a href="index-shop.html">Techwind Shop</a>
                 </li>
                 </li>
                 <li class="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">

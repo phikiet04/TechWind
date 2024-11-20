@@ -372,9 +372,24 @@
         // Cập nhật giá trị của trường quantity
         document.getElementById('quantity').value = this.value;
     });
+    
 
 
 </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.banner-slider').slick({
+            infinite: true, // Chế độ cuộn vô hạn
+            slidesToShow: 1, // Chỉ hiển thị 1 banner tại 1 thời điểm
+            slidesToScroll: 1, // Chuyển động 1 slide mỗi lần
+            autoplay: true, // Tự động chuyển đổi giữa các banner
+            autoplaySpeed: 3000, // Thời gian giữa mỗi slide (3000ms = 3 giây)
+            dots: true, // Hiển thị các dấu chấm cho các slide
+            arrows: true, // Hiển thị các mũi tên điều hướng
+        });
+    });
+</script>
+
 
 <!-- JAVASCRIPTS -->
 </body>

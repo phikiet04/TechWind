@@ -301,7 +301,7 @@
 
         <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] bg-white rounded-xl p-5   ">
             @foreach($ratingProducts as $product)
-            <div class="group transform lg:scale-105 ">
+            <div class="group transform lg:scale-105 border-2 p-1 border-blue-500 rounded-xl  ">
                 <div
                     class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
                     @if ($product->variants->isNotEmpty())
@@ -458,7 +458,7 @@
 
     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] bg-white rounded-xl p-5">
         @foreach($recentProducts as $product)
-        <div class="group transform lg:scale-105">
+        <div class="group transform lg:scale-105 border-2 p-1 border-blue-500 rounded-xl ">
             <div
                 class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
                 @if ($product->variants->isNotEmpty())
